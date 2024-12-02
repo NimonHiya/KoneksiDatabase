@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:padding="16dp"
+    tools:context=".RegistrasiActivity">
+
+    <!-- Title: Register -->
+    <TextView
+        android:id="@+id/textViewRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#2c3e50"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <!-- Username Input Field -->
+    <EditText
+        android:id="@+id/editTextUsernameRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRegisterTitle"
+        android:layout_marginTop="30dp"
+        android:hint="Username"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#34495e"
+        android:textSize="16sp" />
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/editTextPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsernameRegister"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#34495e"
+        android:textSize="16sp"
+        android:inputType="textPassword" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPasswordRegister"
+        android:layout_marginTop="30dp"
+        android:text="Register"
+        android:textColor="#2596be"
+        android:background="@drawable/button_background"
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Login Link Text -->
+    <TextView
+        android:id="@+id/textViewLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login here"
+        android:textColor="#3498db"
+        android:textSize="14sp"
+        android:layout_below="@id/buttonRegister"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

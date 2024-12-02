@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5"
+    tools:context=".Lihat_Bio">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Product Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nama Produk -->
+    <TextView
+        android:id="@+id/labelNamaProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:text="Nama Produk:"
+        android:textColor="#555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/valueNamaProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/labelNamaProduk"
+        android:layout_alignBaseline="@+id/labelNamaProduk"
+        android:layout_marginStart="8dp"
+        android:text="Example Product"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <!-- Harga Produk -->
+    <TextView
+        android:id="@+id/labelHargaProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelNamaProduk"
+        android:text="Harga Produk:"
+        android:textColor="#555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/valueHargaProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/labelHargaProduk"
+        android:layout_alignBaseline="@+id/labelHargaProduk"
+        android:layout_marginStart="8dp"
+        android:text="Rp 123.456"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <!-- Stok Produk -->
+    <TextView
+        android:id="@+id/labelStokProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelHargaProduk"
+        android:text="Stok Produk:"
+        android:textColor="#555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/valueStokProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/labelStokProduk"
+        android:layout_alignBaseline="@+id/labelStokProduk"
+        android:layout_marginStart="8dp"
+        android:text="50"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <!-- Deskripsi Produk -->
+    <TextView
+        android:id="@+id/labelDeskripsiProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelStokProduk"
+        android:text="Deskripsi Produk:"
+        android:textColor="#555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/valueDeskripsiProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/labelDeskripsiProduk"
+        android:layout_alignBaseline="@+id/labelDeskripsiProduk"
+        android:layout_marginStart="8dp"
+        android:text="High-quality example product"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <!-- Alamat Pengiriman -->
+    <TextView
+        android:id="@+id/labelAlamatPengiriman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelDeskripsiProduk"
+        android:text="Alamat Pengiriman:"
+        android:textColor="#555"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/valueAlamatPengiriman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/labelAlamatPengiriman"
+        android:layout_alignBaseline="@+id/labelAlamatPengiriman"
+        android:layout_marginStart="8dp"
+        android:text="Jl. Example No. 123"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelAlamatPengiriman"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#6200EE"
+        android:text="Back"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+</RelativeLayout>

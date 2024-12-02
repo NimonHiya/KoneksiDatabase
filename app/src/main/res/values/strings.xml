@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KoneksiDatabase</string>
+    <string name="update_biodata_set_nama_tgl_jk_alamat_where_no">UPDATE biodata SET nama = ?, tgl = ?, jk = ?, alamat = ? WHERE no = ?</string>
+</resources>

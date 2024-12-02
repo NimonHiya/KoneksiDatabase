@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context=".Update">
+
+    <!-- No Produk Field -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Produk"
+        android:textSize="16sp"
+        android:textColor="#34495e"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/editTextup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="8dp"
+        android:hint="Enter No Produk"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textSize="16sp"
+        android:textColor="#34495e"/>
+
+    <!-- Harga Produk Field -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Produk"
+        android:textSize="16sp"
+        android:textColor="#34495e"
+        android:layout_below="@id/editTextup1"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editTextup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Harga Produk"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textSize="16sp"
+        android:textColor="#34495e"/>
+
+    <!-- Stok Produk Field -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stok Produk"
+        android:textSize="16sp"
+        android:textColor="#34495e"
+        android:layout_below="@id/editTextup2"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editTextup3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Stok Produk"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textSize="16sp"
+        android:textColor="#34495e"/>
+
+    <!-- Deskripsi Produk Field -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Produk"
+        android:textSize="16sp"
+        android:textColor="#34495e"
+        android:layout_below="@id/editTextup3"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editTextup4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Deskripsi Produk"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textSize="16sp"
+        android:textColor="#34495e"/>
+
+    <!-- Alamat Pengiriman Field -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat Pengiriman"
+        android:textSize="16sp"
+        android:textColor="#34495e"
+        android:layout_below="@id/editTextup4"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/editTextup5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Alamat Pengiriman"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textSize="16sp"
+        android:textColor="#34495e"/>
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/editTextup5"
+        android:layout_marginTop="24dp"
+        android:text="Update"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"
+        android:textSize="16sp"
+        android:padding="12dp"/>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/editTextup5"
+        android:layout_marginTop="24dp"
+        android:text="Back"
+        android:textColor="#fff"
+        android:background="@drawable/button_background"
+        android:textSize="16sp"
+        android:padding="12dp"/>
+</RelativeLayout>

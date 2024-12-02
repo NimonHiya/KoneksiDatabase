@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Produk"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Input untuk Nomor Produk -->
+    <TextView
+        android:id="@+id/labelNoProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Produk"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintMarginTop="16dp" />
+
+    <EditText
+        android:id="@+id/inputNoProduk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/labelNoProduk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="8dp" />
+
+    <!-- Input untuk Harga Produk -->
+    <TextView
+        android:id="@+id/labelHargaProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Produk"
+        app:layout_constraintTop_toBottomOf="@id/inputNoProduk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintMarginTop="16dp" />
+
+    <EditText
+        android:id="@+id/inputHargaProduk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/labelHargaProduk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="8dp" />
+
+    <!-- Input untuk Stok Produk -->
+    <TextView
+        android:id="@+id/labelStokProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stok Produk"
+        app:layout_constraintTop_toBottomOf="@id/inputHargaProduk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintMarginTop="16dp" />
+
+    <EditText
+        android:id="@+id/inputStokProduk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/labelStokProduk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="8dp" />
+
+    <!-- Input untuk Deskripsi Produk -->
+    <TextView
+        android:id="@+id/labelDeskripsiProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Produk"
+        app:layout_constraintTop_toBottomOf="@id/inputStokProduk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintMarginTop="16dp" />
+
+    <EditText
+        android:id="@+id/inputDeskripsiProduk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        app:layout_constraintTop_toBottomOf="@id/labelDeskripsiProduk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="8dp" />
+
+    <!-- Input untuk Alamat Pengiriman -->
+    <TextView
+        android:id="@+id/labelAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat Pengiriman"
+        app:layout_constraintTop_toBottomOf="@id/inputDeskripsiProduk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintMarginTop="16dp" />
+
+    <EditText
+        android:id="@+id/inputAlamat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        app:layout_constraintTop_toBottomOf="@id/labelAlamat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="8dp" />
+
+    <!-- Tombol Simpan -->
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        app:layout_constraintTop_toBottomOf="@id/inputAlamat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnKembali"
+        app:layout_constraintMarginTop="24dp" />
+
+    <!-- Tombol Kembali -->
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        app:layout_constraintTop_toBottomOf="@id/inputAlamat"
+        app:layout_constraintStart_toEndOf="@id/btnSimpan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintMarginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
